@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1 (Found)",
+      "setup": "javac src/FirstOccurrence.java",
+      "run": "java -cp src FirstOccurrence",
+      "input": "5 16\n9 7 2 16 4",
+      "output": "4",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Example 2 (Not Found)",
+      "setup": "javac src/FirstOccurrence.java",
+      "run": "java -cp src FirstOccurrence",
+      "input": "6 6\n5 7 7 8 8 10",
+      "output": "-1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "First Element (Pos 1)",
+      "setup": "javac src/FirstOccurrence.java",
+      "run": "java -cp src FirstOccurrence",
+      "input": "4 100\n100 200 300 400",
+      "output": "1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Duplicate Elements (Find First)",
+      "setup": "javac src/FirstOccurrence.java",
+      "run": "java -cp src FirstOccurrence",
+      "input": "6 5\n1 2 5 3 5 5",
+      "output": "3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
